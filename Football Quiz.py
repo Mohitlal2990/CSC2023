@@ -23,6 +23,8 @@ class FootballQuiz:
         self.label_score.pack(pady=10)
         self.button_next = tk.Button(self.root, text="Next", command=self.next_question)
         self.button_next.pack(pady=10)
+        self.exit_button = tk.Button(self.root, text="Exit", command=self.root.destroy)
+        self.exit_button.pack(pady=20)
         self.start_timer()
         self.show_question()
         self.root.mainloop()
@@ -136,3 +138,4 @@ questions = [
 ]
 
 quiz = FootballQuiz(questions) 
+ 
